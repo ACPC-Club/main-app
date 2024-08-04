@@ -2,7 +2,7 @@
 const indexRoutes = require("./indexRoutes");
 const eventsRoutes = require("./eventsRoutes");
 const galleryRoutes = require("./galleryRoutes");
-const projectsRoutes = require("./projectsRoutes");
+// const projectsRoutes = require("./projectsRoutes");
 const contactRoutes = require("./contactRoutes");
 const blogRoutes = require("./blogRoutes");
 const aboutRoutes = require("./aboutRoutes");
@@ -12,7 +12,7 @@ function setupRoutes(app) {
   app.use("/", indexRoutes);
   app.use("/events", eventsRoutes);
   app.use("/gallery", galleryRoutes);
-  app.use("/projects", projectsRoutes);
+  // app.use("/projects", projectsRoutes);
   app.use("/contact", contactRoutes);
   app.use("/blog", blogRoutes);
   app.use("/about", aboutRoutes);

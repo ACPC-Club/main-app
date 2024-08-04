@@ -1,3 +1,9 @@
+<style>
+  .navbar-brand img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+  }
+</style>
 <div class="container-fluid fixed-top px-0">
   <div class="container px-0">
     <div class="topbar">
@@ -7,10 +13,6 @@
             <a href="mailto:acpcclubmiu@gmail.com" class="text-light me-4">
               <i class="fas fa-envelope text-white me-2"></i>
               acpcclubmiu@gmail.com
-            </a>
-            <a href="tel:+201005180811" class="text-light">
-              <i class="fas fa-phone-alt text-white me-2"></i>
-              +20 1005180811
             </a>
           </div>
         </div>
@@ -39,7 +41,7 @@
     </div>
     <nav class="navbar navbar-light bg-light navbar-expand-xl">
       <a href="/" class="navbar-brand ms-3">
-        <h1 class="text-primary display-5">ACPC</h1>
+        <img src="/img/logo.png" alt="ACPC Logo" class="img-fluid" />
       </a>
       <button
         class="navbar-toggler py-2 px-3 me-3"
@@ -66,11 +68,11 @@
             class="nav-item nav-link <%= currentPage === 'service' ? 'active' : '' %>"
             >Services</a
           >
-          <a
+          <!-- <a
             href="/projects"
             class="nav-item nav-link <%= currentPage === 'projects' ? 'active' : '' %>"
             >Projects</a
-          >
+          > -->
           <a
             href="/events"
             class="nav-item nav-link <%= currentPage === 'events' ? 'active' : '' %>"
