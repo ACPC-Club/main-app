@@ -1,6 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const session = require("express-session");
+const path = require("path");
+const favicon = require("serve-favicon");
+
 require("dotenv").config();
 const { connectToMongoDB } = require("./config/mongo.js");
 const { setupRoutes } = require("./routes/routes.js");
@@ -8,6 +11,9 @@ const { setupRoutes } = require("./routes/routes.js");
 const app = express();
 // Serve static files
 app.use(express.static("public", { maxAge: "7d" }));
+
+// Serve favicon
+app.use(favicon(path.join(__dirname, "public", "img", "favicon.ico")));
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
