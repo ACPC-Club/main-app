@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.render("gallery", {
+  res.render("blog", {
     currentPage: "pages",
     user: req.session.user === undefined ? "" : req.session.user,
   });

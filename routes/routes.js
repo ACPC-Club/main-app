@@ -4,7 +4,7 @@ const eventsRoutes = require("./eventsRoutes");
 const galleryRoutes = require("./galleryRoutes");
 const causesRoutes = require("./causesRoutes");
 const contactRoutes = require("./contactRoutes");
-
+const blogRoutes = require("./blogRoutes");
 function setupRoutes(app) {
   // Initialize your routes here...
   app.use("/", indexRoutes);
@@ -12,6 +12,7 @@ function setupRoutes(app) {
   app.use("/gallery", galleryRoutes);
   app.use("/causes", causesRoutes);
   app.use("/contact", contactRoutes);
+  app.use("/blog", blogRoutes);
   // set up 404
 
   app.use((req, res) => {
