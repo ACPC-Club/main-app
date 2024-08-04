@@ -2,17 +2,21 @@
 const indexRoutes = require("./indexRoutes");
 const eventsRoutes = require("./eventsRoutes");
 const galleryRoutes = require("./galleryRoutes");
-const causesRoutes = require("./causesRoutes");
+const projectsRoutes = require("./projectsRoutes");
 const contactRoutes = require("./contactRoutes");
 const blogRoutes = require("./blogRoutes");
+const aboutRoutes = require("./aboutRoutes");
+const serviceRoutes = require("./serviceRoutes");
 function setupRoutes(app) {
   // Initialize your routes here...
   app.use("/", indexRoutes);
   app.use("/events", eventsRoutes);
   app.use("/gallery", galleryRoutes);
-  app.use("/causes", causesRoutes);
+  app.use("/projects", projectsRoutes);
   app.use("/contact", contactRoutes);
   app.use("/blog", blogRoutes);
+  app.use("/about", aboutRoutes);
+  app.use("/service", serviceRoutes);
   // set up 404
 
   app.use((req, res) => {

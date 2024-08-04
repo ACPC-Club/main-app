@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.render("causes", {
-    currentPage: "causes",
+  res.render("projects", {
+    currentPage: "projects",
     user: req.session.user === undefined ? "" : req.session.user,
   });
 });
