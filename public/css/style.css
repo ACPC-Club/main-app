@@ -68,7 +68,7 @@
 }
 
 .btn-hover-bg:hover {
-  background: var(--bs-tretiary) !important;
+  background: #4c82c4 !important;
   color: var(--bs-white) !important;
   border-color: white !important;
 }
@@ -87,7 +87,7 @@
 
 .topbar {
   padding: 2px 10px 2px 20px;
-  background: var(--bs-primary) !important;
+  background: #b42e1c !important;
 }
 
 .topbar a,
@@ -97,7 +97,7 @@
 
 .topbar a:hover,
 .topbar a i:hover {
-  color: var(--bs-secondary) !important;
+  color: #b42e1c !important;
 }
 
 @media (max-width: 768px) {
@@ -122,7 +122,7 @@
 .navbar .navbar-nav .nav-link.active,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
-  color: var(--bs-primary);
+  color: #b42e1c;
 }
 
 .navbar .dropdown-toggle::after {
